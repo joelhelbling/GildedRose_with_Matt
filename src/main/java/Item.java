@@ -1,5 +1,5 @@
 
-public class Item {
+public abstract class Item {
     public String name;
 	public int sellIn; 
     public int quality; 
@@ -9,7 +9,10 @@ public class Item {
 		this.setSellIn(sellIn);
 		this.setQuality(quality);
 	}
-    
+
+    // risking getting shot by goblin
+    public abstract void updateQuality ();
+
 	/* Generated getter and setter code */
     public String getName() {
 		return name;
